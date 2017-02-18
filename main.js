@@ -35,9 +35,11 @@ function validation() {
 
 //Function that makes tree grow
 function makeTreeGrow(myTree) {
+  var finishTree = "";
   for (var i = 0; i < myTree.height; i++) {
     var numOfChar = 2*i+1;
     var numOfSpace = (myTree.height-i);
-    console.log(" ".repeat(numOfSpace), myTree.character.repeat(numOfChar));
+    finishTree += " ".repeat(numOfSpace) + myTree.character.repeat(numOfChar)+ "\n";
   }
+  console.log(finishTree)
 };
